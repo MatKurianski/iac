@@ -43,8 +43,8 @@
             ['Muito satisfatório',     11],
             ['Satisfatório',      22],
             ['Neutro',  2],
-            ['Insatisfatório', 23],
-            ['Muito insatisfatório',    73]
+            ['Insatisfatório', 33],
+            ['Muito insatisfatório',    13]
           ]);
 
           var options = {
@@ -60,11 +60,11 @@
         function desenharConhecimento() {
           var data = google.visualization.arrayToDataTable([
             ['Sensação', 'Número de votos per Day'],
-            ['Muito satisfatório',     11],
+            ['Muito satisfatório',     31],
             ['Satisfatório',      22],
             ['Neutro',  2],
-            ['Insatisfatório', 23],
-            ['Muito insatisfatório',    73]
+            ['Insatisfatório', 43],
+            ['Muito insatisfatório',    13]
           ]);
 
           var options = {
@@ -81,9 +81,9 @@
           var data = google.visualization.arrayToDataTable([
             ['Sensação', 'Número de votos per Day'],
             ['Muito satisfatório',     11],
-            ['Satisfatório',      22],
-            ['Neutro',  2],
-            ['Insatisfatório', 23],
+            ['Satisfatório',      26],
+            ['Neutro',  12],
+            ['Insatisfatório', 31],
             ['Muito insatisfatório',    73]
           ]);
 
@@ -134,10 +134,24 @@
         <li><a href="gerente-usuario.html">Início</a></li>
         <li><a href="index.html">Sair</a></li>
       </ul>
-
+      <br/>
         <div class="container">
           <div class="row">
-            <h5>Dados do funcionario</h5>
+              <div class="input-field col s12">
+                <select>
+                  <option value="1">Tábata Cristina</option>
+                  <option value="2">Fernando Ferdinando</option>
+                  <option value="3">Joelma Escalarte</option>
+                </select>
+                <label><b>Ver avaliação individual feita por:</b></label>
+              </div>
+              <div class="col s12 center-align">
+                  <a class="waves-effect waves-light btn m-auto">Prosseguir e ver avaliação individual</a>
+              </div>
+          </div>
+        
+          <div class="row">
+            <h5>Dados gerais do funcionario</h5>
             <div class="col s12 m6">
                 <h6 class="center-align">Respeito:</h6>
                 <div class="progress">
@@ -182,6 +196,9 @@
           document.addEventListener('DOMContentLoaded', function() {
             let elems = document.querySelectorAll('.sidenav');
             let instances = M.Sidenav.init(elems);
+
+            elems = document.querySelectorAll('select');
+            instances = M.FormSelect.init(elems);
           });
       </script>
     </body>
