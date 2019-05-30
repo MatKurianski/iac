@@ -1,579 +1,580 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<html>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
-    <style>
-        @media only screen and (min-width: 728px) {
-          .brand-logo {
-            margin-left: 30px;
-          }
-        }
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
-        * {
-          color: black;
-        }
-    </style>
-    <body class="#c5cae9 indigo lighten-4"></body>
-      <nav class="indigo darken-2">
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">iRate</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="usuario.html">Início</a></li>
-            <li><a href="avaliar.html">Avaliar</a></li>
-            <li><a href="index.html">Sair</a></li>
-          </ul>
-        </div>
-      </nav>
-        
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="usuario.html">Início</a></li>
-        <li><a href="avaliar.html">Avaliar</a></li>
-        <li><a href="index.html">Sair</a></li>
-      </ul>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<style>
+  @media only screen and (min-width: 728px) {
+    .brand-logo {
+      margin-left: 30px;
+    }
+  }
 
+  * {
+    color: black;
+  }
+</style>
 
-        <br>
-        <div class="container">
-          <div class="row">
+<body class="#c5cae9 indigo lighten-4"></body>
+<nav class="indigo darken-2">
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo">iRate</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="usuario.html">Início</a></li>
+      <li><a href="avaliar.html">Avaliar</a></li>
+      <li><a href="index.html">Sair</a></li>
+    </ul>
+  </div>
+</nav>
 
-            <h3>COMPORTAMENTO</h3>
-
-            <div class="col s12 m6 l4 xl12">            
-
-             <blockquote>
-              Toma Iniciativa?
-            </blockquote>   
-
-            <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
-                                  
-                <label>
-                <input name="group1" type="radio" disabled="disabled"  value="i" checked /> 
-                <span>Sim</span>                     
-                </label>
-
-                <label>
-                <input name="group1" type="radio" value="i" disabled="disabled" />           
-                <span>Não</span>    
-                </label>              
-
-            </div>
-          </div>
-
-         <div class="col s12 m6 l4 xl12">            
-
-                  <blockquote>
-                   O quanto é ele(a) respeitoso(a)?
-                 </blockquote>   
-     
-                 <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
-                    <label>
-                        <input name="group1" type="radio" disabled="disabled" /> 
-                        <span>0</span>                     
-                        </label>
-
-                     <label>
-                     <input name="group1"  type="radio" disabled="disabled" /> 
-                     <span>1</span>                     
-                     </label>
-     
-                     <label>
-                     <input name="group1" type="radio" disabled="disabled" />           
-                     <span>2</span>    
-                     </label> 
-                     
-                     <label>
-                        <input name="group1"  type="radio" disabled="disabled" /> 
-                        <span>3</span>                     
-                        </label>
-
-                        <label>
-                            <input name="group1"  type="radio" disabled="disabled" /> 
-                            <span>4</span>                     
-                            </label>
-
-                            <label>
-                                <input name="group1"  type="radio" disabled="disabled" /> 
-                                <span>5</span>                     
-                                </label>
-                                <label>
-                                    <input name="group1"  type="radio" disabled="disabled" /> 
-                                    <span>6</span>                     
-                                    </label>
-                                    <label>
-                                        <input name="group1"  type="radio" disabled="disabled" /> 
-                                        <span>7</span>                     
-                                        </label>
-                                        <label>
-                                            <input name="group1"  type="radio" disabled="disabled" /> 
-                                            <span>8</span>                     
-                                            </label>
-                                            <label>
-                                                <input name="group1"  type="radio" disabled="disabled" /> 
-                                                <span>9</span>                     
-                                                </label>
-                                                <label>
-                                                    <input name="group1"  type="radio" disabled="disabled" checked/> 
-                                                    <span>10</span>                     
-                                                    </label>
-
-     
-                 </div>
-               </div>
-     
-               <div class="col s12 m6 l4 xl12">
-
-              
-              <blockquote>
-                Como você avalia o trabalho em equipe?
-             </blockquote>   
- 
-             <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
-                                   
-                    <label>
-                    <input name="group1"  type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Muito Insatisfeito">sentiment_very_dissatisfied</i></span>                     
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" />           
-                    <span><i class="material-icons" title="Insatisfeito">sentiment_dissatisfied</i></span>    
-                    </label>
-    
-                    <label>
-                    <input  name="group1"  type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Neutro">sentiment_neutral</i></span>
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" checked/>
-                    <span><i class="material-icons" title="Satisfeito">sentiment_satisfied</i></span>
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" /> 
-                     <span><i class="material-icons" title="Muito Satisfeito">sentiment_very_satisfied</i></span>
-                    </label>
- 
-             </div>
-           </div>
-
-           <div class="col s12 m6 l4 xl12">
-
-              
-              <blockquote>
-               Como lida com pressão?
-             </blockquote>   
- 
-             <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
-                                   
-                     <label>
-                    <input name="group1"  type="radio" disabled="disabled" checked /> 
-                    <span><i class="material-icons" title="Bem">thumb_up</i></span>                     
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" />           
-                    <span><i class="material-icons" title="Mal">thumb_down</i></span>    
-                    </label>    
-                    
- 
-             </div>
-           </div>
-
-              <div class="col s12 m6 l4 xl12">            
-
-                  <blockquote>
-                   O quanto é transparente?
-                 </blockquote>   
-     
-                 <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
-                    <label>
-                        <input name="group1"  type="radio" disabled="disabled" /> 
-                        <span>0</span>                     
-                        </label>
-
-                     <label>
-                     <input name="group1"  type="radio" disabled="disabled" /> 
-                     <span>1</span>                     
-                     </label>
-     
-                     <label>
-                     <input name="group1" type="radio" disabled="disabled" />           
-                     <span>2</span>    
-                     </label> 
-                     
-                     <label>
-                        <input name="group1"  type="radio" disabled="disabled" /> 
-                        <span>3</span>                     
-                        </label>
-
-                        <label>
-                            <input name="group1"  type="radio" disabled="disabled" /> 
-                            <span>4</span>                     
-                            </label>
-
-                            <label>
-                                <input name="group1"  type="radio" disabled="disabled" /> 
-                                <span>5</span>                     
-                                </label>
-                                <label>
-                                    <input name="group1"  type="radio" disabled="disabled" /> 
-                                    <span>6</span>                     
-                                    </label>
-                                    <label>
-                                        <input name="group1"  type="radio" disabled="disabled" checked/> 
-                                        <span>7</span>                     
-                                        </label>
-                                        <label>
-                                            <input name="group1"  type="radio" disabled="disabled" /> 
-                                            <span>8</span>                     
-                                            </label>
-                                            <label>
-                                                <input name="group1"  type="radio" disabled="disabled" /> 
-                                                <span>9</span>                     
-                                                </label>
-                                                <label>
-                                                    <input name="group1"  type="radio" disabled="disabled" /> 
-                                                    <span>10</span>                     
-                                                    </label>
-
-     
-                 </div>
-               </div>
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="usuario.html">Início</a></li>
+  <li><a href="avaliar.html">Avaliar</a></li>
+  <li><a href="index.html">Sair</a></li>
+</ul>
 
 
-             <div class="col s12 m6 l4 xl12">   
-              <blockquote>
-               Como você qualifica o comprometimento?
-             </blockquote>   
- 
-             <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
-                                   
-                    <label>
-                    <input name="group1"  type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Muito Insatisfeito">sentiment_very_dissatisfied</i></span>                     
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" />           
-                    <span><i class="material-icons" title="Insatisfeito">sentiment_dissatisfied</i></span>    
-                    </label>
-    
-                    <label>
-                    <input  name="group1"  type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Neutro">sentiment_neutral</i></span>
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Satisfeito">sentiment_satisfied</i></span>
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" checked /> 
-                     <span><i class="material-icons" title="Muito Satisfeito">sentiment_very_satisfied</i></span>
-                    </label>
- 
-             </div>
-             
-           </div>
-           <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Comentários</label>
-            </div>
+<br>
+<div class="container">
+  <div class="row">
 
-           
-           <h3>CONHECIMENTO</h3>
+    <h3>COMPORTAMENTO</h3>
 
-           <div class="col s12 m6 l4 xl12">
+    <div class="col s12 m6 l4 xl12">
 
-              
-              <blockquote>
-                Como você avalia o desenvolvimento de skills?
-             </blockquote>   
- 
-             <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
-                                   
-                    <label>
-                    <input name="group1"  type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Muito Insatisfeito">sentiment_very_dissatisfied</i></span>                     
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" checked />           
-                    <span><i class="material-icons" title="Insatisfeito">sentiment_dissatisfied</i></span>    
-                    </label>
-    
-                    <label>
-                    <input  name="group1"  type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Neutro">sentiment_neutral</i></span>
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Satisfeito">sentiment_satisfied</i></span>
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" /> 
-                     <span><i class="material-icons" title="Muito Satisfeito">sentiment_very_satisfied</i></span>
-                    </label>
- 
-             </div>
-           </div>
+      <blockquote>
+        Toma Iniciativa?
+      </blockquote>
 
-           <div class="col s12 m6 l4 xl12">
+      <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
 
-              
-              <blockquote>
-                Como você avalia a atualização de conhecimento em relação a area?
-             </blockquote>   
- 
-             <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
-                                   
-                    <label>
-                    <input name="group1"  type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Muito Insatisfeito">sentiment_very_dissatisfied</i></span>                     
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" />           
-                    <span><i class="material-icons" title="Insatisfeito">sentiment_dissatisfied</i></span>    
-                    </label>
-    
-                    <label>
-                    <input  name="group1"  type="radio" disabled="disabled" checked /> 
-                    <span><i class="material-icons" title="Neutro">sentiment_neutral</i></span>
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Satisfeito">sentiment_satisfied</i></span>
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" /> 
-                     <span><i class="material-icons" title="Muito Satisfeito">sentiment_very_satisfied</i></span>
-                    </label>
- 
-             </div>
-           </div>
-           <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Comentários</label>
-            </div>
+        <label>
+          <input name="group13" type="radio" disabled="disabled" value="i" checked />
+          <span>Sim</span>
+        </label>
 
-           <h3>DESEMPENHO</h3>
+        <label>
+          <input name="group13" type="radio" value="i" disabled="disabled" />
+          <span>Não</span>
+        </label>
 
-           <div class="col s12 m6 l4 xl12">
+      </div>
+    </div>
 
-              
-              <blockquote>
-                Como você avalia a qualidade dos serviços?
-             </blockquote>   
- 
-             <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
-                                   
-                    <label>
-                    <input name="group1"  type="radio" disabled="disabled" checked/> 
-                    <span><i class="material-icons" title="Muito Insatisfeito">sentiment_very_dissatisfied</i></span>                     
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" />           
-                    <span><i class="material-icons" title="Insatisfeito">sentiment_dissatisfied</i></span>    
-                    </label>
-    
-                    <label>
-                    <input  name="group1"  type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Neutro">sentiment_neutral</i></span>
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Satisfeito">sentiment_satisfied</i></span>
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" /> 
-                     <span><i class="material-icons" title="Muito Satisfeito">sentiment_very_satisfied</i></span>
-                    </label>
- 
-             </div>
-           </div>
+    <div class="col s12 m6 l4 xl12">
 
-           <div class="col s12 m6 l4 xl12">
+      <blockquote>
+        O quanto é ele(a) respeitoso(a)?
+      </blockquote>
 
-              
-              <blockquote>
-                Como você avalia o prazo de entrega?
-             </blockquote>   
- 
-             <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
-                                   
-                    <label>
-                    <input name="group1"  type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Muito Insatisfeito">sentiment_very_dissatisfied</i></span>                     
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" />           
-                    <span><i class="material-icons" title="Insatisfeito">sentiment_dissatisfied</i></span>    
-                    </label>
-    
-                    <label>
-                    <input  name="group1"  type="radio" disabled="disabled" checked/> 
-                    <span><i class="material-icons" title="Neutro">sentiment_neutral</i></span>
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Satisfeito">sentiment_satisfied</i></span>
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" /> 
-                     <span><i class="material-icons" title="Muito Satisfeito">sentiment_very_satisfied</i></span>
-                    </label>
- 
-             </div>
-           </div>
+      <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
+        <label>
+          <input name="group12" type="radio" disabled="disabled" />
+          <span>0</span>
+        </label>
 
-           <div class="col s12 m6 l4 xl12">
+        <label>
+          <input name="group12" type="radio" disabled="disabled" />
+          <span>1</span>
+        </label>
 
-              
-              <blockquote>
-                Como você avalia o compromisso?
-             </blockquote>   
- 
-             <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
-                                   
-                    <label>
-                    <input name="group1"  type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Muito Insatisfeito">sentiment_very_dissatisfied</i></span>                     
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" />           
-                    <span><i class="material-icons" title="Insatisfeito">sentiment_dissatisfied</i></span>    
-                    </label>
-    
-                    <label>
-                    <input  name="group1"  type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Neutro">sentiment_neutral</i></span>
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Satisfeito">sentiment_satisfied</i></span>
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" checked/> 
-                     <span><i class="material-icons" title="Muito Satisfeito">sentiment_very_satisfied</i></span>
-                    </label>
- 
-             </div>
-           </div>
-           <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Comentários</label>
-            </div>
+        <label>
+          <input name="group12" type="radio" disabled="disabled" />
+          <span>2</span>
+        </label>
+
+        <label>
+          <input name="group12" type="radio" disabled="disabled" />
+          <span>3</span>
+        </label>
+
+        <label>
+          <input name="group12" type="radio" disabled="disabled" />
+          <span>4</span>
+        </label>
+
+        <label>
+          <input name="group12" type="radio" disabled="disabled" />
+          <span>5</span>
+        </label>
+        <label>
+          <input name="group12" type="radio" disabled="disabled" />
+          <span>6</span>
+        </label>
+        <label>
+          <input name="group12" type="radio" disabled="disabled" />
+          <span>7</span>
+        </label>
+        <label>
+          <input name="group12" type="radio" disabled="disabled" />
+          <span>8</span>
+        </label>
+        <label>
+          <input name="group12" type="radio" disabled="disabled" />
+          <span>9</span>
+        </label>
+        <label>
+          <input name="group12" type="radio" disabled="disabled" checked />
+          <span>10</span>
+        </label>
 
 
-           <h3>ADAPTAÇÃO</h3>
+      </div>
+    </div>
 
-           <div class="col s12 m6 l4 xl12">
-
-              
-              <blockquote>
-                Como você avalia o comportamento em relação ao ambiente de trabalho?
-             </blockquote>   
- 
-             <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
-                                   
-                    <label>
-                    <input name="group1"  type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Muito Insatisfeito">sentiment_very_dissatisfied</i></span>                     
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" />           
-                    <span><i class="material-icons" title="Insatisfeito">sentiment_dissatisfied</i></span>    
-                    </label>
-    
-                    <label>
-                    <input  name="group1"  type="radio" disabled="disabled" checked/> 
-                    <span><i class="material-icons" title="Neutro">sentiment_neutral</i></span>
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Satisfeito">sentiment_satisfied</i></span>
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" /> 
-                     <span><i class="material-icons" title="Muito Satisfeito">sentiment_very_satisfied</i></span>
-                    </label>
- 
-             </div>
-           </div>
-
-           <div class="col s12 m6 l4 xl12">
-
-              
-              <blockquote>
-                Segue as regras?
-             </blockquote>   
- 
-             <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
-                                   
-                <label>
-                    <input name="group1"  type="radio" disabled="disabled" /> 
-                    <span><i class="material-icons" title="Bem">thumb_up</i></span>                     
-                    </label>
-    
-                    <label>
-                    <input name="group1" type="radio" disabled="disabled" checked/>           
-                    <span><i class="material-icons" title="Mal">thumb_down</i></span>    
-                    </label>    
- 
-             </div>
-           </div>
-
-           <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Comentários</label>
-            </div>
-            
-            <a href="avaliar.html">
-              <button class="btn waves-effect waves-light" name="action">Finalizar
-                <i class="material-icons right">send</i>
-              </button>
-            </a>
-            <button class="btn waves-effect waves-light" name="action">
-              Salvar e responder depois
-            </button>
-          </div>
-        </div>       
+    <div class="col s12 m6 l4 xl12">
 
 
-      <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script>
-          document.addEventListener('DOMContentLoaded', function() {
-            let elems = document.querySelectorAll('.sidenav');
-            let instances = M.Sidenav.init(elems);
-          });
-      </script>
-    </body>
-  </html>
+      <blockquote>
+        Como você avalia o trabalho em equipe?
+      </blockquote>
+
+      <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
+
+        <label>
+          <input name="group11" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Muito Insatisfeito">sentiment_very_dissatisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group11" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Insatisfeito">sentiment_dissatisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group11" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Neutro">sentiment_neutral</i></span>
+        </label>
+
+        <label>
+          <input name="group11" type="radio" disabled="disabled" checked />
+          <span><i class="material-icons" title="Satisfeito">sentiment_satisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group11" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Muito Satisfeito">sentiment_very_satisfied</i></span>
+        </label>
+
+      </div>
+    </div>
+
+    <div class="col s12 m6 l4 xl12">
+
+
+      <blockquote>
+        Como lida com pressão?
+      </blockquote>
+
+      <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
+
+        <label>
+          <input name="group10" type="radio" disabled="disabled" checked />
+          <span><i class="material-icons" title="Bem">thumb_up</i></span>
+        </label>
+
+        <label>
+          <input name="group10" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Mal">thumb_down</i></span>
+        </label>
+
+
+      </div>
+    </div>
+
+    <div class="col s12 m6 l4 xl12">
+
+      <blockquote>
+        O quanto é transparente?
+      </blockquote>
+
+      <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
+        <label>
+          <input name="group9" type="radio" disabled="disabled" />
+          <span>0</span>
+        </label>
+
+        <label>
+          <input name="group9" type="radio" disabled="disabled" />
+          <span>1</span>
+        </label>
+
+        <label>
+          <input name="group9" type="radio" disabled="disabled" />
+          <span>2</span>
+        </label>
+
+        <label>
+          <input name="group9" type="radio" disabled="disabled" />
+          <span>3</span>
+        </label>
+
+        <label>
+          <input name="group9" type="radio" disabled="disabled" />
+          <span>4</span>
+        </label>
+
+        <label>
+          <input name="group9" type="radio" disabled="disabled" />
+          <span>5</span>
+        </label>
+        <label>
+          <input name="group9" type="radio" disabled="disabled" />
+          <span>6</span>
+        </label>
+        <label>
+          <input name="group9" type="radio" disabled="disabled" checked />
+          <span>7</span>
+        </label>
+        <label>
+          <input name="group9" type="radio" disabled="disabled" />
+          <span>8</span>
+        </label>
+        <label>
+          <input name="group9" type="radio" disabled="disabled" />
+          <span>9</span>
+        </label>
+        <label>
+          <input name="group9" type="radio" disabled="disabled" />
+          <span>10</span>
+        </label>
+
+
+      </div>
+    </div>
+
+
+    <div class="col s12 m6 l4 xl12">
+      <blockquote>
+        Como você qualifica o comprometimento?
+      </blockquote>
+
+      <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
+
+        <label>
+          <input name="group8" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Muito Insatisfeito">sentiment_very_dissatisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group8" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Insatisfeito">sentiment_dissatisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group8" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Neutro">sentiment_neutral</i></span>
+        </label>
+
+        <label>
+          <input name="group8" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Satisfeito">sentiment_satisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group8" type="radio" disabled="disabled" checked />
+          <span><i class="material-icons" title="Muito Satisfeito">sentiment_very_satisfied</i></span>
+        </label>
+
+      </div>
+
+    </div>
+    <div class="input-field col s12">
+      <textarea id="textarea1" class="materialize-textarea"></textarea>
+      <label for="textarea1">Comentários</label>
+    </div>
+
+
+    <h3>CONHECIMENTO</h3>
+
+    <div class="col s12 m6 l4 xl12">
+
+
+      <blockquote>
+        Como você avalia o desenvolvimento de skills?
+      </blockquote>
+
+      <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
+
+        <label>
+          <input name="group7" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Muito Insatisfeito">sentiment_very_dissatisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group7" type="radio" disabled="disabled" checked />
+          <span><i class="material-icons" title="Insatisfeito">sentiment_dissatisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group7" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Neutro">sentiment_neutral</i></span>
+        </label>
+
+        <label>
+          <input name="group7" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Satisfeito">sentiment_satisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group7" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Muito Satisfeito">sentiment_very_satisfied</i></span>
+        </label>
+
+      </div>
+    </div>
+
+    <div class="col s12 m6 l4 xl12">
+
+
+      <blockquote>
+        Como você avalia a atualização de conhecimento em relação a area?
+      </blockquote>
+
+      <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
+
+        <label>
+          <input name="group6" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Muito Insatisfeito">sentiment_very_dissatisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group6" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Insatisfeito">sentiment_dissatisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group6" type="radio" disabled="disabled" checked />
+          <span><i class="material-icons" title="Neutro">sentiment_neutral</i></span>
+        </label>
+
+        <label>
+          <input name="group6" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Satisfeito">sentiment_satisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group6" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Muito Satisfeito">sentiment_very_satisfied</i></span>
+        </label>
+
+      </div>
+    </div>
+    <div class="input-field col s12">
+      <textarea id="textarea1" class="materialize-textarea"></textarea>
+      <label for="textarea1">Comentários</label>
+    </div>
+
+    <h3>DESEMPENHO</h3>
+
+    <div class="col s12 m6 l4 xl12">
+
+
+      <blockquote>
+        Como você avalia a qualidade dos serviços?
+      </blockquote>
+
+      <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
+
+        <label>
+          <input name="group5" type="radio" disabled="disabled" checked />
+          <span><i class="material-icons" title="Muito Insatisfeito">sentiment_very_dissatisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group5" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Insatisfeito">sentiment_dissatisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group5" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Neutro">sentiment_neutral</i></span>
+        </label>
+
+        <label>
+          <input name="group5" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Satisfeito">sentiment_satisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group5" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Muito Satisfeito">sentiment_very_satisfied</i></span>
+        </label>
+
+      </div>
+    </div>
+
+    <div class="col s12 m6 l4 xl12">
+
+
+      <blockquote>
+        Como você avalia o prazo de entrega?
+      </blockquote>
+
+      <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
+
+        <label>
+          <input name="group4" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Muito Insatisfeito">sentiment_very_dissatisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group4" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Insatisfeito">sentiment_dissatisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group4" type="radio" disabled="disabled" checked />
+          <span><i class="material-icons" title="Neutro">sentiment_neutral</i></span>
+        </label>
+
+        <label>
+          <input name="group4" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Satisfeito">sentiment_satisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group4" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Muito Satisfeito">sentiment_very_satisfied</i></span>
+        </label>
+
+      </div>
+    </div>
+
+    <div class="col s12 m6 l4 xl12">
+
+
+      <blockquote>
+        Como você avalia o compromisso?
+      </blockquote>
+
+      <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
+
+        <label>
+          <input name="group3" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Muito Insatisfeito">sentiment_very_dissatisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group3" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Insatisfeito">sentiment_dissatisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group3" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Neutro">sentiment_neutral</i></span>
+        </label>
+
+        <label>
+          <input name="group3" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Satisfeito">sentiment_satisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group3" type="radio" disabled="disabled" checked />
+          <span><i class="material-icons" title="Muito Satisfeito">sentiment_very_satisfied</i></span>
+        </label>
+
+      </div>
+    </div>
+    <div class="input-field col s12">
+      <textarea id="textarea1" class="materialize-textarea"></textarea>
+      <label for="textarea1">Comentários</label>
+    </div>
+
+
+    <h3>ADAPTAÇÃO</h3>
+
+    <div class="col s12 m6 l4 xl12">
+
+
+      <blockquote>
+        Como você avalia o comportamento em relação ao ambiente de trabalho?
+      </blockquote>
+
+      <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
+
+        <label>
+          <input name="group2" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Muito Insatisfeito">sentiment_very_dissatisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group2" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Insatisfeito">sentiment_dissatisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group2" type="radio" disabled="disabled" checked />
+          <span><i class="material-icons" title="Neutro">sentiment_neutral</i></span>
+        </label>
+
+        <label>
+          <input name="group2" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Satisfeito">sentiment_satisfied</i></span>
+        </label>
+
+        <label>
+          <input name="group2" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Muito Satisfeito">sentiment_very_satisfied</i></span>
+        </label>
+
+      </div>
+    </div>
+
+    <div class="col s12 m6 l4 xl12">
+
+
+      <blockquote>
+        Segue as regras?
+      </blockquote>
+
+      <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
+
+        <label>
+          <input name="group1" type="radio" disabled="disabled" />
+          <span><i class="material-icons" title="Bem">thumb_up</i></span>
+        </label>
+
+        <label>
+          <input name="group1" type="radio" disabled="disabled" checked />
+          <span><i class="material-icons" title="Mal">thumb_down</i></span>
+        </label>
+
+      </div>
+    </div>
+
+    <div class="input-field col s12">
+      <textarea id="textarea1" class="materialize-textarea"></textarea>
+      <label for="textarea1">Comentários</label>
+    </div>
+
+    <center><a href="gerente-funcionario.html">
+      <button class="btn-floating btn-large waves-effect waves-light red" name="action">
+        <i class="material-icons right">arrow_back</i>
+      </button>
+    </a>
+  </center>
+  </div>
+</div>
+
+
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let elems = document.querySelectorAll('.sidenav');
+    let instances = M.Sidenav.init(elems);
+  });
+</script>
+</body>
+
+</html>
